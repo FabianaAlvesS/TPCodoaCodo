@@ -49,5 +49,35 @@
 }
 
 
+/*  Agrege cosas - Fabiana */
+#cabeza{
+    background-color: rgb(223, 112, 21);
+    width: 100%;
+    height: 100%;
+
+}
+#Instagram{
+    padding: 0%;
+    margin: 0%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;/** Ariba y abajo**/
+    left: 90%;/** derecha o izquierda**/
+}
+#contacto{
+    padding: 0%;
+    margin: 0%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;/** Ariba y abajo**/
+    left: 91%;/** derecha o izquierda**/
+}
+#Titulo{
+    text-align: center; /**texto centrado**/
+}
+
+
 
 
