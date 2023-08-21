@@ -1,0 +1,40 @@
+#Nav{
+    background-color: aqua;
+    padding: auto;
+    margin: auto;
+    width: 100%;
+    height: 50%;
+}
+#Nav ul li {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px;
+    display: block;
+    display:inline-block;
+   text-align: center;
+
+}
+
+#Nav ul li a:hover {
+    background-color: brown;
+    float: left;
+}
+#Nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    
+}
+
+#Nav li:hover > ul {
+    display:block;
+    background-color: blueviolet;
+    width: 8%;
+    height: 30%;
+    text-align: justify;
+    display:inline-block;
+}
+
+
+
+
