@@ -1,0 +1,134 @@
+body{
+    background-color: hsla(48, 45%, 98%, 0.959);
+}
+/**-------------------Menu desplegable---------------**/
+#Nav{
+    background-color: #4699dd;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 30%;
+    position: relative;
+    bottom: 15px;
+ /*   */
+}
+#Nav ul li {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px;
+    display: block;
+    display:inline-block;
+   text-align: center;
+
+}
+#Nav ul li a:hover {
+    background-color: #4699dd7a;
+}
+#Nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    
+}
+#Nav li:hover > ul {
+    display:block;
+    background-color: #398ab9d0;
+    width: 8%;
+    height: 300%;
+    text-align: justify;
+    display:inline-block;
+}
+
+
+#cabeza{
+    
+    background-image:url(https://www.unionguanajuato.mx/wp-content/uploads/2022/04/dia-bicicleta.jpg);
+    background-repeat:no-repeat;
+   
+    
+
+}
+
+/**-------------------Redes y contactos---------------**/
+#Instagram{
+    padding: 1%;
+    margin: 0%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 3px;/** Ariba y abajo**/
+    left: 90%;/** derecha o izquierda**/
+}
+#contacto{
+    padding: 1%;
+    margin: 0%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 8px;/** Ariba y abajo**/
+    left: 91%;/** derecha o izquierda**/
+}
+
+
+/**-------------------titulo---------------**/
+#Titulo{
+    text-align: center; /**texto centrado**/
+}
+
+
+/**-------------------pie de pagina---------------**/
+footer{
+    background-color: black;
+    width: 100%;
+    height: 70px;}
+
+
+
+
+
+/**-------------------productos y caracteristicas---------------**/
+.contenedor{
+    max-width: 1000px;
+    width: 100px;
+    margin: 40px;
+    display: flex;
+}
+.contenedor #mostrador{
+    width: 100px;
+    transition: .5s ease;
+}
+
+#fila {
+display: flex;
+justify-content: space-between;
+margin-bottom: 40px;
+}
+
+
+#mostrador #fila .item{
+max-width: 130px;
+background-color: rgba(252, 251, 248, 0.911);
+padding: 5px 5px 5px 5px;
+margin: 10px 10px 10px 10px;
+height: 260px; 
+text-align: center;
+cursor: pointer;
+border-radius: 5px; /**Borde circular**/
+transition: .3s; /**tiempo de transicion**/
+}
+
+#mostrador #fila .item:hover{
+    background-color: rgb(49, 43, 30);
+}
+
+#mostrador #fila .item img{
+    width: 110px;
+    height: 15px 0px;
+}
+
+.Main{
+    width: 160px;
+    height: 150px;
+    display: inline;
+    margin: 2px;
+}
