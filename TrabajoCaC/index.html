@@ -1,79 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RodaMundo</title>
     <link rel="stylesheet" href="Estilos.css">
+    <script src="https://kit.fontawesome.com/e3828f3cfc.js" crossorigin="anonymous"></script>
 </head>
 <body>
      
  <!-- Favicon -->
      <link rel="icon" type="image/jpg" href="Bici.jpg"/>
 
-
+    <div class="span-header"><span>Super ofertas de primavera - Envios gratis a todo el pais a partir de 20.000$</span></div>
 <!-- header -->
     <header id="cabeza" >
-        <h1 id="Titulo">RodaMundo</h1>
-       
+        
         <img src="imagen/Logo Bicicleteria Minimalista Verde  (1).png" class=" logo">
 
+
  <!-- menu desplegable -->
- <nav id="Nav">
-    <ul class="items">
-        <li class="itemMenu"><a href="#">Bicicletas</a>
-            <ul>
-                <li><a href="#">Urbanas</a></li>
-                <li><a href="#">Niños</a></li>
-                <li><a href="#">Electricas</a></li>
-            </ul>
-        </li>
+ <div class="nav">
+    <nav id="Nav">
+        <ul class="items">
+            <li class="itemMenu"><a href="#">Bicicletas</a>
+                <ul>
+                    <li><a href="#">Urbanas</a></li>
+                    <li><a href="#">Niños</a></li>
+                    <li><a href="#">Electricas</a></li>
+                </ul>
+            </li>
+    
+            <li class="itemMenu"><a href="#">Indumentarias</a>
+               <ul>
+                    <li><a href="#">Calzas</a></li>
+                    <li><a href="#">Cascos</a></li>
+                    <li><a href="#">Chalecos</a></li>
+                </ul>
+            </li>
+    
+            <li class="itemMenu"><a href="#">Accesorios</a>
+                <ul>
+                    <li><a href="#">Caramañola</a></li>
+                    <li><a href="#">Infladores</a></li>
+                    <li><a href="#">Fundas</a></li>
+                </ul>
+            </li>
+    
+            <li class="itemMenu"><a href="#">Repuestos</a>
+                <ul>
+                    <li><a href="#">Asientos</a></li>
+                    <li><a href="#">Cadenas</a></li>
+                    <li><a href="#">Frenos</a></li>
+                </ul>
+            </li>
+    
+            <li class="itemMenu"><a href="#">Marcas</a>
+                <ul>
+                    <li><a href="#">Cannondale</a></li>
+                    <li><a href="#">Deckas</a></li>
+                    <li><a href="#">Elite</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+    </nav>
 
-        <li class="itemMenu"><a href="#">Indumentarias</a>
-           <ul>
-                <li><a href="#">Calzas</a></li>
-                <li><a href="#">Cascos</a></li>
-                <li><a href="#">Chalecos</a></li>
-            </ul>
-        </li>
-
-        <li class="itemMenu"><a href="#">Accesorios</a>
-            <ul>
-                <li><a href="#">Caramañola</a></li>
-                <li><a href="#">Infladores</a></li>
-                <li><a href="#">Fundas</a></li>
-            </ul>
-        </li>
-
-        <li class="itemMenu"><a href="#">Repuestos</a>
-            <ul>
-                <li><a href="#">Asientos</a></li>
-                <li><a href="#">Cadenas</a></li>
-                <li><a href="#">Frenos</a></li>
-            </ul>
-        </li>
-
-        <li class="itemMenu"><a href="#">Marcas</a>
-            <ul>
-                <li><a href="#">Cannondale</a></li>
-                <li><a href="#">Deckas</a></li>
-                <li><a href="#">Elite</a></li>
-            </ul>
-        </li>
-    </ul>
-
-</nav>
-
-<form action="" method="post" class="FromBuscar"></form>
-
-     <input type="search" name="buscar Producto" placeholder="Buscar...">
-  
-      <input type="submit" value="Buscar">
-  
-  </form>
-    </header>
+</div>
+    <div class="search-user-car">
+        <form action="" method="post" class="FromBuscar"></form>
+    
+         <input type="search" name="buscar Producto" placeholder="Buscar...">
+      
+          <input type="submit" value="Buscar">
+      
+      </form>
+      <i id="user-ico" class="fa-solid fa-user"></i>
+      <i id ="car-ico"class="fa-solid fa-cart-shopping"></i>
+    </div>
+    
+ 
+   </header>
    
-
+<main>
+    <div class="slider-box">
+        <ul>
+            <li>
+                <img src="./imagen/descargaCarusel1.jpg" alt="atardecer" srcset="atardecer en la ciudad">
+                <div class="texto">
+                    <h2>Imagen 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius impedit non delectus, veritatis illum aliquam. Accusamus atque aperiam nostrum maxime iste qui ut!
+                    </p>
+                </div>
+            
+            </li>
+             <li>
+                <img src="./imagen/descargaCarusel2.jpg" alt="atardecer" srcset="atardecer en la ciudad">
+                <div class="texto">
+                    <h2>Imagen 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius impedit non delectus, veritatis illum aliquam. Accusamus atque aperiam nostrum maxime iste qui ut!
+                    </p>
+                </div>
+             </li>
+             <li>
+                <img src="./imagen/imagesCarusel3.jpg" alt="atardecer" srcset="atardecer en la ciudad">
+                <div class="texto">
+                    <h2>Imagen 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius impedit non delectus, veritatis illum aliquam. Accusamus atque aperiam nostrum maxime iste qui ut!
+                    </p>
+                </div>
+             </li>
+             <li>
+                <img src="./imagen/BicicletasVarias.jpg" alt="atardecer" srcset="atardecer en la ciudad">
+                <div class="texto">
+                    <h2>Imagen 4</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius impedit non delectus, veritatis illum aliquam. Accusamus atque aperiam nostrum maxime iste qui ut!
+                    </p>
+                </div>
+             </li>
+         </ul>
+     </div>
+</main>
 
 
  <!-- Productos y sus caracteristicas -->
