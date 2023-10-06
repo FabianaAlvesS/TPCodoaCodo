@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  
+  <form action="">
+    <fieldset>
+        <legend>Datos Personales</legend>
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
+
+        <br>
+        <!-- Apellido -->
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" size="10" maxlength="5" required>
+
+        <br>
+        <!-- DNI -->
+        <label for="dni">DNI: </label>
+        <input type="number">
+
+        <br>
+        <!-- Nro de Trámite -->
+        <label for="nro_tramite">Número de Trámite: </label>
+        <input type="password">
+
+        <br>
+        <!-- Cant de Hijos -->
+        <label for="hijos">Nro de Hijos (0 a 10): </label>
+        <input type="number" min="0" max="10">
+
+        <br>
+        <!-- Mail -->
+        <label for="mail">Mail: </label>
+        <input type="email">
+
+        <br>
+        <!-- Fecha de Nacimiento -->
+        <label for="fecnac">Fecha de Nacimiento: </label>
+        <input type="date" min="2023-01-01" max="2023-12-31">
+
+        <br>
+        <!-- Adjuntar archivo -->
+        <label for="archivo">Adjuntar archivo: </label>
+        <input type="file">
+    </fieldset>
+
+
+    <br><br>
+    <fieldset>
+        <legend>Datos para la Inscripción</legend>
+
+        <!-- Turno - Selección -->
+        <label for="turno">Seleccionar turno: </label>
+        <select name="turno" id="turno">
+            <option value="vacio"></option>
+            <option value="1">Mañana</option>
+            <option value="2">Tarde</option>
+            <option value="3">Vespertino</option>
+            <option value="4">Noche</option>
+        </select>
+        <br><br>
+
+        <!-- Conocimientos - Checkbox (selección múltiple) -->
+        <label for="conocimientos">Conocimientos: </label>
+        <input type="checkbox" name="HTML">HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JavaScript
+        <br><br>
+
+
+        <!-- Interés - Radio (única selección) -->
+        <label for="interes">Tengo interés en...</label>
+        <input type="radio" name="interes" id="A">FullStack Python
+        <input type="radio" name="interes" id="B">FullStack JAVA
+        <input type="radio" name="interes" id="C">FullStack PHP
+        <input type="radio" name="interes" id="D">Diseño UX/UI
+
+
+
+    </fieldset>
+
+    <br><br>
+    <!-- Comentarios -->
+    <label for="comentarios">Comentarios: </label>
+    <br>
+    <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+
+    <br><br>
+
+    <!-- Botones -->
+    <input type="submit" value="Enviar Formulario">
+    <input type="reset" value="Borrar">
+
+
+</form>
+
+   
+</body>
+</html>
