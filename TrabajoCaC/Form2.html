@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="form.css"> 
 </head>
 <body>
-    <H1>Formulario dos!!</H1>
+  <div class="form-container">
+    <form class="form-register" action="#" method="post">
+      <h4>Formulario Registro</h4>
+      <label for="nombre">Nombre: </label>
+      <input class="controls" type="text" name="nombre" size="40" id="nombres" placeholder="Ingrese su nombre">
+      <label for="apellido">Apellido: </label>
+      <input class="controls" type="text" name="apellido" size="40" id="apellido" placeholder="Ingrese su apellido">
+      <label for="correo">Correo: </label>
+      <input class="controls" type="email" name="correo" size="40" id="correo" placeholder="Ingrese su correo electronico">
+      <label for="contrasenia">Contraseña: </label>
+      <input class="controls" type="password" name="contrasenia" size="40" id="contrasenia" placeholder="Ingrese su contraseña">
+      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+      <div class="div-botones">
+        <a href="index.html"><input class="botons" type="button" value="Volver"></a>
+        <input class="botons" type="submit" value="Registrarse">
+      </div>
+      <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </form>
+  </section>
 </body>
 </html>
