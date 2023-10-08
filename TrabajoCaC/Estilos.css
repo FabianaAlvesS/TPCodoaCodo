@@ -224,7 +224,9 @@ nav {
 }
 .contenedor{
    margin: auto;
-   display: grid;
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1000px;
    gap: 10px;
    justify-content: center;
    grid-template-columns: 200px 200px 200px 200px;
