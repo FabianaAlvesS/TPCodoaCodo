@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-  
-  <form action="">
-    <fieldset>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="form-container">
+    <form class="form-register" action="index.html">
+      <fieldset>
         <legend>Datos Personales</legend>
 
         <!-- Nombre -->
@@ -61,48 +61,47 @@
         <!-- Turno - Selección -->
         <label for="turno">Seleccionar turno: </label>
         <select name="turno" id="turno">
-            <option value="vacio"></option>
-            <option value="1">Mañana</option>
-            <option value="2">Tarde</option>
-            <option value="3">Vespertino</option>
-            <option value="4">Noche</option>
+          <option value="vacio"></option>
+          <option value="1">Mañana</option>
+          <option value="2">Tarde</option>
+          <option value="3">Vespertino</option>
+          <option value="4">Noche</option>
         </select>
-        <br><br>
+        <br /><br />
 
         <!-- Conocimientos - Checkbox (selección múltiple) -->
         <label for="conocimientos">Conocimientos: </label>
-        <input type="checkbox" name="HTML">HTML
-        <input type="checkbox">CSS
-        <input type="checkbox">JavaScript
-        <br><br>
-
+        <input type="checkbox" name="HTML" />HTML <input type="checkbox" />CSS
+        <input type="checkbox" />JavaScript <br /><br />
 
         <!-- Interés - Radio (única selección) -->
         <label for="interes">Tengo interés en...</label>
-        <input type="radio" name="interes" id="A">FullStack Python
-        <input type="radio" name="interes" id="B">FullStack JAVA
-        <input type="radio" name="interes" id="C">FullStack PHP
-        <input type="radio" name="interes" id="D">Diseño UX/UI
+        <input type="radio" name="interes" id="A" />FullStack Python
+        <input type="radio" name="interes" id="B" />FullStack JAVA
+        <input type="radio" name="interes" id="C" />FullStack PHP
+        <input type="radio" name="interes" id="D" />Diseño UX/UI
+      </fieldset>
 
+      <br><br>
+      <!-- Comentarios -->
+      <label for="comentarios">Comentarios: </label>
+      <br>
+      <textarea
+        name="comentarios"
+        id="comentarios"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br><br>
 
-
-    </fieldset>
-
-    <br><br>
-    <!-- Comentarios -->
-    <label for="comentarios">Comentarios: </label>
-    <br>
-    <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-
-    <br><br>
-
-    <!-- Botones -->
-    <input type="submit" value="Enviar Formulario">
-    <input type="reset" value="Borrar">
-
-
-</form>
-
-   
-</body>
+      <!-- Botones -->
+      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+      <div class="div-botones">
+        <a href="index.html"><input class="botons" type="button" value="Inicio"></a>
+        <input class="botons" type="submit" value="Registrarse">
+      </div>
+      <p><a href="index.html">Omitir estos pasos</a></p>
+    </form>
+    </div>
+  </body>
 </html>

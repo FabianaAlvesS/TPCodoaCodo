@@ -26,7 +26,9 @@ header {
     
 }
 
-
+.pespacio {
+    margin-top: 10px;
+}
 
 
 
@@ -36,6 +38,10 @@ nav {
       font-size: x-large;
 }
 
+.itemMenu {
+    display: inline-block;
+}
+
 #Nav ul {
     display: flex;  
     
@@ -43,6 +49,7 @@ nav {
 
 #Nav ul li {
     list-style: none;
+    margin-top: 5px;
 }
 
 #Nav ul li a {
