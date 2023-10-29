@@ -28,14 +28,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
     
 }
+
+.pespacio {
+    margin-top: 10px;
+}
+
+
 
 /**-------------------Menu desplegable---------------**/
 
 nav {
       font-size: x-large;
+}
+
+.itemMenu {
+    display: inline-block;
 }
 
 #Nav ul {
@@ -45,6 +54,8 @@ nav {
 
 #Nav ul li {
     list-style: none;
+    padding: 0 15;
+    margin-top: 5px;
 }
 
 #Nav ul li a {
@@ -155,6 +166,19 @@ nav {
 
     .texto p {
         font-size: 15px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .search-user-car {
+        visibility: hidden;
     }
 }
 
