@@ -8,6 +8,8 @@
 
 body{
     background-color: hsla(40, 6%, 91%, 0.959);
+    width: 100%;
+    height: 100%;
 }
 
 /**--------------------header----------------------**/
@@ -20,48 +22,161 @@ body{
 .span-header {
     background-color: rgba(245, 116, 10, 0.877);
     text-align: center;
-    padding: 10px;
+   
 }
+@media screen and (max-width: 1200px) {
+    .span-header{
+font-size: 10px;
+    }
+    
+}
+
 
 header {
     background-color:rgba(248, 159, 57, 0.822);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /**display: flex;
+    align-items: center;Baja la caja**/
+   width: 100%;
+   height: 150px;
+}
+@media screen and (max-width: 1200px) {
+    .header{
+width: 50px;
+height: 20px;
+    }
     
 }
 
 .pespacio {
-    margin-top: 10px;
+    margin-top: -100px;
+    background-color: aqua;
 }
 
+.CuentaDeUsuario {
+   display: flex; 
+   list-style:none;
 
+     
+}
+
+.CuentaDeUsuario a{
+    text-decoration: none;
+    text-align:right;
+    color:black;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    position:relative;
+    top: -106px;   /**Baja la caja**/
+    right: -900px; /**posiciona del lado redercho la caja**/
+    
+    
+}
+@media screen and (max-width: 1200px) {
+    .CuentaDeUsuario a{
+        text-decoration: none;
+    text-align:right;
+    color:black;
+    font-size: 10px;
+    padding: 10px 10px 10px 10px;
+    position:relative;
+    top: -55px;   /**Baja la caja**/
+    right: -550px; /**posiciona del lado redercho la caja**/
+
+    }
+    
+}
+/**-------------------Buscador---------------**/
+
+.CuadroBuscador{
+    width :450px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 320px;
+
+}
+@media screen and (max-width: 1200px) {
+    .CuadroBuscador{
+    width: 280px;
+    height: 20px;
+    position: relative;
+    top: -100px;
+    left: 140px;
+    }
+    
+}
+.BotonBuscador{
+    width :150px;
+    height: 40px;
+    position: relative;
+    left: 800px;
+    top: -227px;
+}
+@media screen and (max-width: 1200px) {
+    .BotonBuscador{
+        width: 100px;
+        height: 20px;
+        position: relative;
+        left: 150px;
+        top: -100px;
+        }
+}
 
 /**-------------------Menu desplegable---------------**/
 
-nav {
-      font-size: x-large;
-}
+Nav {
+    width: 100px;
+    height: -100px;
+    position: relative;
+    left: 210px;/**izquierda a derecha**/
+    top: -125px; /**arriba y abajo**/ 
+    
+       
+    }
+    
 
-.itemMenu {
+#Nav ul li .items .itemMenu {
+    padding: 5px;
     display: inline-block;
+    position: relative;
+        top: 10px;
+        left: 2%;
+
 }
 
 #Nav ul {
     display: flex;  
-    
+    position: relative;
+        left: 75%;
+        bottom: 10px;
+        font-size: 20px;
+     
 }
 
+@media screen and (max-width: 1200px) {
+    #Nav ul{
+        width: 10px;
+        height: 20px;
+        position: relative;
+        left: -80px;
+        bottom: -90px;
+        font-size: 15px;
+        }
+}
+    
 #Nav ul li {
     list-style: none;
-    padding: 0 15;
-    margin-top: 5px;
+    position: relative;
+        left: 25%;
+        top: 60%;
 }
+
 
 #Nav ul li a {
     text-decoration: none;
     color:black;
     padding:10px;
+    
  }
 
 #Nav ul li a:hover {
@@ -69,13 +184,17 @@ nav {
 }
 #Nav li ul {
     display:none;
+    width: 200px;
+    height: 200px;
     position:absolute;
-    min-width:140px;
-    
+    bottom: -200px;
+    left: -10px;
+    background-color: #e9b880;
 }
 #Nav li:hover > ul {
+    
     display:block;
-    background-color: #ffffff; 
+
     text-align: justify;
     
 }
@@ -83,9 +202,21 @@ nav {
 
 
 .logo{
-    width: 200px;
+    width: 190px;
     mix-blend-mode: multiply; /**Elimina el fondo de las imgen**/
+   position: relative;
+   bottom: 30px;
 
+}
+@media screen and (max-width: 1200px) {
+    .logo{
+        padding: 0%;
+        margin: 0%;
+        width: 100px;
+        position: relative;
+        bottom: -10px;
+    }
+    
 }
 
 
@@ -94,7 +225,7 @@ nav {
 
 .slider-box {
     width: 1280px;
-    height: auto;
+    height: 352px;
     margin: 50px auto 0;
     overflow: hidden;
 }
@@ -128,6 +259,7 @@ nav {
 
 .slider-box img {
     width: 100%;
+    object-fit: cover;
 }
 
 
@@ -174,7 +306,7 @@ nav {
 
     .nav ul li {
         padding: 10px 0;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #dd1515;
     }
 
     .search-user-car {
@@ -311,30 +443,6 @@ transition: .3s; /**tiempo de transicion**/
     text-align: center;
 }
 
-/**-------------------Buscador---------------**/
-.Buscador{
-    width :250px;
-    height: 50px;
-    position: relative;
-    bottom: -15px;
-
-}
-
-.CuadroBuscador{
-    width :450px;
-    height: 40px;
-    position: relative;
-    bottom: 55px;
-    left: -340%;
-
-}
-.BotonBuscador{
-    width :150px;
-    height: 40px;
-    position: relative;
-    left: -400px;
-    top: -95px;
-}
 
 /**------------------------Form1---------------------**/
 .bodyF1{
