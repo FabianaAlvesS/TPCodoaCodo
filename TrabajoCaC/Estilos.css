@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: hsla(40, 6%, 91%, 0.959);
+    background-color: hsla(60, 4%, 91%, 0.959);
     width: 100%;
     height: 100%;
 }
@@ -314,63 +314,143 @@ Nav {
     }
 }
 
-/**-------------------Redes y contactos---------------**/
-#Instagram{
-    padding: 1%;
-    margin: 0%;
-    width: 25px;
-    height: 25px;
-    position: relative;
-    top: 3px;/** Ariba y abajo**/
-    left: 90%;/** derecha o izquierda**/
-}
-#contacto{
-    padding: 1%;
-    margin: 0%;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 8px;/** Ariba y abajo**/
-    left: 91%;/** derecha o izquierda**/
-}
-
-
 /**-------------------pie de pagina---------------**/
 .pie{
-    background-color: rgb(204, 51, 5);
-    margin:auto;
+    background-color: rgb(233, 147, 36);
+    padding: 8px 8px ;
+    margin: 8px 8px ;
     width: 100%;
-    height: 300px;
+    height: 100%;
     display: flex;
-
-    justify-content: space-around
+    justify-content: space-around;
+    text-align: left;
 }
 
-.pie .pie-menu-column {
-    background-color: yellow;
-    align-items: center;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1200px) {
+    .pie{
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+        position: relative;
+        bottom: -10px;
+        background-color: #923b3b;
+    }
     
 }
 
-.pie .pie-contacto {
-  background-color: chartreuse;
-  width: 50%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 
-.ul-redes {
-    margin-top: 5px;
+.pie-sobre_Nosotros{
+    padding: 10px 10px ;
+    margin: 10px 10px ;
+    background-color: rgb(226, 148, 70);
+    align-items: last baseline;
+    width: 50%;
+    height: 257px;
     display: flex;
-    gap : 5px
+    flex-direction: column;
 }
 
+.TituloSobreNosotros{
+    padding: 10px;
+}
+@media screen and (max-width: 1200px) {
+    .TituloSobreNosotros{
+        padding: 0%;
+        margin: 0%;
+       font-size: 15px;
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    .pie-sobre_Nosotros p{
+        padding: 0%;
+        margin: 0%;
+       font-size: 10px;
+    }
+    
+}
+
+
+.pie-Ayuda {
+    padding: 10px ;
+    margin: 10px  ;
+    background-color: rgb(226, 148, 70);
+    align-items: last baseline;
+    width: 40%;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;;
+}
+.pie-Ayuda a{
+    text-decoration: none;
+    color: black;
+    padding: 1px;
+}
+@media screen and (max-width: 600px) {
+    .pie-Ayuda{
+        padding: 0%;
+        margin: 0%;
+       font-size: 10px;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    .pie-Ayuda{
+        padding: 0%;
+        margin: 0%;
+       font-size: 10px;
+       text-align: right;
+
+    }
+}
+
+.pie-Escribinos {
+    padding: 10px 10px ;
+    margin: 10px 10px ;
+    background-color: rgb(226, 148, 70);
+    align-items: last baseline;
+    width: 50%;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+    .pie-Escribinos{
+        padding: 0%;
+        margin: 0%;
+       font-size: 10px;
+
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    .pie-Seguinos{
+        padding: 0%;
+        margin: 0%;
+       font-size: 10px;
+    }
+    
+}
+
+.pie-Seguinos{
+    padding: 10px 10px ;
+    margin: 10px 10px ;
+    background-color: rgb(226, 148, 70);
+    align-items: last baseline;
+    width: 50%;
+    height: 257px;
+    display:inline-block;
+    flex-direction: column;
+
+}
 .li-redes  {
    list-style-type: none;
+    font-size:xx-large;
+    align-self: auto;
+    color: black;
+    padding: 10px;
+   
 }
 
 
@@ -435,14 +515,13 @@ transition: .3s; /**tiempo de transicion**/
     background-color: rgb(49, 43, 30);
 }
 
-
 /**-------------------imagenes con licks---------------**/
 .banner-links{
-    background-color: whitesmoke;
+    background-color: hsla(60, 4%, 91%, 0.959);
     margin-top: 100px;
     text-align: center;
+    
 }
-
 
 /**------------------------Form1---------------------**/
 .bodyF1{
