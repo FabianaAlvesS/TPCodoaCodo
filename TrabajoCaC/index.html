@@ -6,21 +6,29 @@
     <title>RodaMundo</title>
     <link rel="stylesheet" href="Estilos.css">
     <script src="https://kit.fontawesome.com/e3828f3cfc.js" crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+    
 </head>
 <body>
       
- <!-- Favicon -->
+ <!-- ********************Favicon***************************** -->
      <link rel="icon" type="image/jpg" href="Bici.jpg"/>
 
     <div class="span-header"><span>Super ofertas de primavera - Envios gratis a todo el pais a partir de 20.000$</span></div>
-<!-- header -->
+<!-- **********************header **************************** -->
     <header id="cabeza" >
         
         <img src="imagen/Logo Bicicleteria Minimalista Verde  (1).png" class=" logo">
+        <div class="CuentaDeUsuario">
+            <a href="Form2.html">Crear cuenta </a> 
+            <a href="Form3.html">ingresar</a> 
+            <a href="">Mis compras</a>
+        </div>
+        
 
 
- <!-- menu desplegable -->
-    <div class="nav">
+ <!--******************** menu desplegable **************************-->
+   <!-- <div class="nav">-->
         <nav id="Nav">
             <ul class="items">
                 <li><a href="index.html">Inicio</a></li>
@@ -80,24 +88,20 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-    </div>
+        
+ <!--******************** Buscador **************************-->
 
-</div>
-    <div class="search-user-car">
-        <form action="" method="post" class="FromBuscar"></form>
+            <form action="" method="post" class="FromBuscar"></form>
+                <input class="CuadroBuscador" type="search" name="buscar Producto" placeholder="Buscar...">
+                <input class="BotonBuscador" type="submit" value="Buscar">
+            </form>       
+            <!--  <a href="Form2.html"><i id="user-ico" class="fa-solid fa-user"></i></a>
+                <i id ="car-ico"class="fa-solid fa-cart-shopping"></i>  -->
     
-         <input type="search" name="buscar Producto" placeholder="Buscar...">
-      
-          <input type="submit" value="Buscar">
-      
-      </form>       
-      <a href="Form2.html"><i id="user-ico" class="fa-solid fa-user"></i></a>
-      <i id ="car-ico"class="fa-solid fa-cart-shopping"></i>
-    </div>
     
  
-   </header>
-   
+</header>
+   <!--******************** Slider**************************-->
 <main>
     <div class="slider-box">
         <ul>
@@ -143,7 +147,7 @@
 </main>
 
 
- <!-- Productos y sus caracteristicas -->
+ <!-- *****************Productos y sus caracteristicas *******************-->
  <section class="section-header">
     <h2>Nuestros Productos</h2>
  </section>
@@ -152,22 +156,21 @@
             <div class="item-box">
             
                     <div class="img-box">
-                        <img class="item-img" src="imagen/bici1.png" alt="">
+                       <a href="producto1.html"> <img class="item-img" src="imagen/bici1.png" alt=""></a>
                     </div>
                     
                     <p id="descripcion">Bicicleta Fuji  Alu/carbon Celero </p>
                     <span id="precio">$25.000</span>
-                </div>
-                    
-                </div>
             </div>
+                    
+            
  
             <div class="item-box">
                 <div class="img-box">
                     <img class="item-img" src="imagen/BiciN2.png" alt="">
                 </div>
                     <p id="descripcion">Bicicleta Fuji  Alu/carbon Celero </p>
-                    <span id="precio">$25.000</span>
+                    <span id="precio">$205.000</span>
             </div>
 
             <div class="item-box">
@@ -175,7 +178,7 @@
                     <img class="item-img" src="imagen/BiciN3.png" alt="">
                 </div>
                     <p id="descripcion">Bicicleta Fuji  Alu/carbon Celero </p>
-                    <span id="precio">$25.000</span>
+                    <span id="precio">$189.000</span>
             </div>
 
             <div class="item-box">
@@ -183,7 +186,7 @@
                     <img class="item-img" src="imagen/BiciN2.png" alt="">
                 </div>
                     <p id="descripcion">Bicicleta Fuji  Alu/carbon Celero </p>
-                    <span id="precio">$25.000</span>
+                    <span id="precio">$250.000</span>
             </div>
 </section>
 <br>        
@@ -228,7 +231,6 @@
                     <span id="precio">$5.000</span>
             </div>
 </section>
- <!-- asdasdasd -->
  <!-- imagenes con linck -->
 <section class="banner-links">
     <a href="#" ><img src="imagen/Repuesto.jpg" class="img" width="250" height="190px"></a>
@@ -242,72 +244,58 @@
     
 
  <!-- pie de pagina -->
-    <footer class="pie">
-        <div class="pie-menu-column">
-            <h5>Categorias</h5>
 
-          
-          <span class="categoria-pie">
-            <a href="#" data-id="">
-              Bicicletas
-            </a>
-          </span>
-          
-          <span class="categoria-pie">
-            <a href="#" data-id="">
-              Componentes
-            </a>
-          </span>
-          
-          <span class="categoria-pie">
-            <a href="#" data-id="">
-              Accesorios
-            </a>
-          </span>
-          
-          <span class="categoria-pie">
-            <a href="#" data-id="">
-              Marcas
-            </a>
-          </span>
-          
-          <span class="categoria-pie">
-            <a href="#" data-id="">
-              Shimano
-            </a>
-          </span>
+    <footer class="pie">
+
+        <div class="pie-sobre_Nosotros"> 
+            
+            <h3 class="TituloSobreNosotros">Sobre Nosotros</h3><br>
+            
+            <p>Tenemos todo para el armado de <br>
+            bicicletas adecuadas a cada persona <br>
+            según uso, presupuesto y gustos.<br>
+            Una bike para cada persona, armá la tuya <br>
+            como quieras! Bicicletas de <br>
+            competición, XC, 4X, DH, Urban. <br>
+            La mayor variedad en bikes, partes, <br>
+            repuestos y las mejores marcas</p>
+        </div>
+
+        <div class="pie-Ayuda">
+            <h3>Ayuda</h3> <br>
+
+            <a href="#"> ¿Como comprar?</a>
+            <br>
+            <a href="#"> Cambios & devoluciones</a>
+            <br>
+            <a href="#"> Botón de arrepentimiento</a>
         </div>
         
-        <div class="pie-contacto"> 
-            <h5>ESCRIBINOS</h5>
+        <div class="pie-Escribinos"> 
+            <h3>Escribinos</h3><br>
+            
+            <br>
+            <span><i class="fa-brands fa-whatsapp"></i> 23232323</span>
+            <br>
+            <span><a href="#"><i class="fa-regular fa-envelope"></i></a> Rodamundo@gmail.com </span>
+            <br>
+            <span><a href="#"><i class="fa-sharp fa-regular fa-location-dot"></i></a>calle siempre viva 123 , <br> san rafael gutierres , <br>argentina </span>
+            <br>
+        </div>
+
+
+        <div class="pie-Seguinos"> 
+            <h3>Seguinos</h3><br>
             
             <ul class="ul-redes">
-                <li class="li-redes"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li class="li-redes"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="li-redes"><a href="https://www.google.com/search?q=facebook&rlz=1C1ONGR_esAR1075AR1075&oq=facebook&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyFQgBEC4YQxiDARjHARixAxjRAxiKBTIGCAIQRRhAMgYIAxBFGDwyBggEEAUYQDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIyMTVqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8"><i class="fa-brands fa-facebook" style="color: #0d0d0d;"></i></a></li>
+                <li class="li-redes"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #0c0d0d;"></i></a></li>
             </ul>
             <br>
-            <span><i class="fa-brands fa-whatsapp"></i> 23232323 - Rodamundo@gmail.com</span>
-            <br>
-
-            <span>calle siempre viva 123 , san rafael gutierres , argentina</span>
-            <br>
-
-            <span><a href="#"><i class="fa-regular fa-envelope"></i></a> Contacto</span>
-            <br>
-
-            <a href="#"> Como comprar?</a>
-
-           
-           
-           
-
         </div>
+
        
     </footer>
 
-  
-
 </body>
-
-
 </html>
