@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(imagen/fondo2.jpg);
+    background-image: url(imagen/fondoForm2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -15,12 +15,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: white;
+    color: rgb(248, 241, 241);
 }
 
 .form-register {
     width: 400px;
-    background: #24303c;
+    background: rgba(41, 38, 35, 0.897);
     padding: 30px;
     border-radius: 4px;
     font-family: 'calibri';
@@ -34,11 +34,11 @@ body {
 
 .controls {
     width: 100%;
-    background: #24303c;
+    background: rgba(77, 69, 59, 0.801);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
+    border: 1px solid #c5541f;
     font-family: 'calibri';
     font-size: 16px;
 }
@@ -66,7 +66,7 @@ body .div-botones {
 }
 
 .form-register .botons {
-    background:  #1f53c5;
+    background:  rgb(197, 111, 31);
     border: none;
     padding: 12px;
     color: white;
