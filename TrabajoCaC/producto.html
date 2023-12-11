@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <script src="https://kit.fontawesome.com/e3828f3cfc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header></header>
+
+<main><!--container -->
+    <div class="main-producto">
+        <div class="producto-imagenes">
+            <div class="DetalleDelProductoF1"><!--img_container -->
+                <img src="imagen/bicicleta.webp" alt="" class="img1" id="imagenPrincipal"> <!--main_img -->
+            </div>
+            
+            <div class="ContenedorDeImg" onclick="cambiarImagen(event)"> <!--thumbnail_container -->
+                <img class="img activa" src="imagen/bicidelado.webp" alt="" data-imagen="imagen/bicidelado.webp"> <!--thumbnail-->
+                <img class="img" src="imagen/manubrio.webp" alt="" data-imagen="imagen/manubrio.webp"><!--thumbnail-->
+                <img class="img" src="imagen/pedal.webp" alt="" data-imagen="imagen/pedal.webp"><!--thumbnail-->
+                <img class="img" src="imagen/aciento.webp" alt="" data-imagen="imagen/aciento.webp"><!--thumbnail-->
+                <img class="img" src="imagen/bicicleta.webp" alt="" data-imagen="imagen/bicicleta.webp"><!--thumbnail-->
+            </div>
+        </div>
+        <div class="descripcion_Productos">
+            <h2>Bicicleta Thunder Sky 2.0 R29 21 Velocidades Frenos A Disco</h2>
+            <h1 class="H1F1">$410.799</h1>
+            
+            <p class="parafo">Lo que tenés que saber de este producto</p>
+            <ul>
+                <li>Cuadro fabricado en aluminio que brinda una gran resistencia.</li>
+                <li>Dispone de manubrio recto.</li>
+                <li>Suspensión delantera.</li>
+                <li>Con pie de apoyo.</li>
+                <li>Las imágenes pueden ser ilustrativas.</li>
+                <li>Material de la llanta: aluminio</li>
+            </ul>
+        </div>
+        <div class="contenedor-formulario">
+            <form id="formulario" enctype="multipart/form-data">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required>
+        
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" required>
+        
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+        
+                <label for="precio">Precio:</label>
+                <input type="number" step="0.01" id="precio" name="precio" required>
+        
+                <label for="imagenProducto">Imagen del producto:</label>
+                <input type="file" id="imagenProducto" name="imagen">
+        
+                <label for="proveedorProducto">Proveedor:</label>
+                <input type="text" id="proveedorProducto" name="proveedor">
+                
+                <div class="button-form">
+                    <button type="submit">Agregar al carrito</button>
+                    <button href="index.html">Comprar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer></footer>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="java.js"></script>
+<script src="componentes.js"></script>
+</body>
+</html>
