@@ -8,14 +8,6 @@ let miHeader =`
             <img src="imagen/Logo Bicicleteria Minimalista Verde  (1).png">
             <link rel="icon" type="image/jpg" href="Bici.jpg" />
         </div>
-        <!--******************** Buscador **************************-->
-        <div class="header-busqueda">
-            <div class="buscador">
-                <form action="" method="post"></form>
-                    <input class="CuadroBuscador" type="search" name="buscar Producto" placeholder="Buscar...">
-                    <input class="BotonBuscador" type="submit" value="Buscar">
-                </form>
-            </div>
 
             <!--******************** menu desplegable **************************-->
             <div class="nav">
@@ -45,12 +37,12 @@ let miHeader =`
                     </ul>
                 </nav>
             </div>
-        </div>
+        
         <!--******************** Buscador **************************-->
 
         <div class="CuentaDeUsuario">
             <a href="Form2.html">Crear cuenta </a>
-            <a href="Form3.html">ingresar</a>
+            <a href="Form3.html">Ingresar</a>
             <a href="carrito.html">Mis compras</a>
             <a href="misproductos.html">Mis productos</a>
         </div>

@@ -4,7 +4,6 @@
     display:flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: 200px;
 }
 
 .crud p {
@@ -15,14 +14,14 @@
     padding: 20px;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
+ h2{
     text-align: center;
     color: #007bff;
-} */
+}
 
-.crud form {
+form {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 20px;
     background-color: white;
     border: 1px solid lightslategray;
@@ -31,7 +30,7 @@
 
 table {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: white;
     border: 1px solid lightslategray;
@@ -43,8 +42,8 @@ label {
     margin-bottom: 5px;
 }
 
-.crud input[type="text"],
-.crud input[type="number"],
+input[type="text"],
+input[type="number"],
 textarea {
     width: 90%;
     padding: 10px;
@@ -53,7 +52,7 @@ textarea {
     border-radius: 5px;
 }
 
-.crud input[type="submit"] {
+input[type="submit"] {
     padding: 10px;
     background-color: #007bff;
     color: #ffffff;
@@ -62,11 +61,11 @@ textarea {
     cursor: pointer;
 }
 
-.crud input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.crud button {
+button {
     padding: 8px;
     margin:4px;
     background-color: #007bff;
@@ -104,4 +103,25 @@ th {
 
 .tabla-crud {
     margin: 20px auto;
+}
+
+#formulario a {
+    padding: 8px;
+    margin:4px;
+    background-color: #fdab13;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 85%;
+    margin: 20px auto;
+}
+
+#formulario a:hover {
+    background-color: #cd7b00;
+}
+
+.cuerpo {
+    margin: 25px auto;
 }
