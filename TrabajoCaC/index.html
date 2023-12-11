@@ -1,301 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RodaMundo</title>
-    <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="Estilos.css" />
     <script src="https://kit.fontawesome.com/e3828f3cfc.js" crossorigin="anonymous"></script>
     <script src="java.js"></script>
-    
 </head>
+
 <body>
-      
- <!-- ********************Favicon***************************** -->
-     <link rel="icon" type="image/jpg" href="Bici.jpg"/>
+    <header></header>
 
-    <div class="span-header"><span>Super ofertas de primavera - Envios gratis a todo el pais a partir de 20.000$</span></div>
-<!-- **********************header **************************** -->
-    <header id="cabeza" >
-        
-        <img src="imagen/Logo Bicicleteria Minimalista Verde  (1).png" class=" logo">
-        <div class="CuentaDeUsuario">
-            <a href="Form2.html">Crear cuenta </a> 
-            <a href="Form3.html">ingresar</a> 
-            <a href="">Mis compras</a>
-        </div>
-        
-
-
- <!--******************** menu desplegable **************************-->
-   <!-- <div class="nav">-->
-        <nav id="Nav">
-            <ul class="items">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a>
-                    <ul class="items">
-                        <li class="itemMenu"><a href="#">Bicicletas</a>
-                            <ul>
-                                <li><a href="#">Urbanas</a></li>
-                                <li><a href="#">Niños</a></li>
-                                <li><a href="#">Electricas</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="itemMenu"><a href="#">Indumentarias</a>  
-                           <ul>
-                                <li><a href="#">Calzas</a></li>
-                                <li><a href="#">Cascos</a></li>
-                                <li><a href="#">Chalecos</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="itemMenu"><a href="#">Accesorios</a>
-                            <ul>
-                                <li><a href="#">Caramañola</a></li>
-                                <li><a href="#">Infladores</a></li>
-                                <li><a href="#">Fundas</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="itemMenu"><a href="#">Repuestos</a>
-                            <ul>
-                                <li><a href="#">Asientos</a></li>
-                                <li><a href="#">Cadenas</a></li>
-                                <li><a href="#">Frenos</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="itemMenu"><a href="#">Marcas</a>
-                            <ul>
-                                <li><a href="#">Cannondale</a></li>
-                                <li><a href="#">Deckas</a></li>
-                                <li><a href="#">Elite</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="servicios.html">Servicios</a>
-                    <ul class="items">
-                        <li class="itemMenu"><a href="#">Mantenimiento</a></li>
-                        <li class="itemMenu"><a href="#">Delivery</a></li>
-                        <li class="itemMenu"><a href="#">Eventos y Turismo</a></li>
-                        <li class="itemMenu"><a href="#">Seguridad</a></li>
-                        <li class="itemMenu"><a href="#">Salud</a></li>
-                    </ul>
-                </li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        
- <!--******************** Buscador **************************-->
-
-            <form action="" method="post" class="FromBuscar"></form>
-                <input class="CuadroBuscador" type="search" name="buscar Producto" placeholder="Buscar...">
-                <input class="BotonBuscador" type="submit" value="Buscar">
-            </form>       
-            <!--  <a href="Form2.html"><i id="user-ico" class="fa-solid fa-user"></i></a>
-                <i id ="car-ico"class="fa-solid fa-cart-shopping"></i>  -->
-    
-    
- 
-</header>
-   <!--******************** Slider**************************-->
-<main>
-    <div class="slider-box">
-        <ul>
-            <li>
-                <img src="./imagen/descargaCarusel1.jpg" alt="atardecer" srcset="atardecer en la ciudad">
-                <div class="texto">
-                    <h2>Imagen 1</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius impedit non delectus, veritatis illum aliquam. Accusamus atque aperiam nostrum maxime iste qui ut!
-                    </p>
-                </div>
-            
-            </li>
-             <li>
-                <img src="./imagen/descargaCarusel2.jpg" alt="atardecer" srcset="atardecer en la ciudad">
-                <div class="texto">
-                    <h2>Imagen 2</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius impedit non delectus, veritatis illum aliquam. Accusamus atque aperiam nostrum maxime iste qui ut!
-                    </p>
-                </div>
-             </li>
-             <li>
-                <img src="./imagen/imagesCarusel3.jpg" alt="atardecer" srcset="atardecer en la ciudad">
-                <div class="texto">
-                    <h2>Imagen 3</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius impedit non delectus, veritatis illum aliquam. Accusamus atque aperiam nostrum maxime iste qui ut!
-                    </p>
-                </div>
-             </li>
-             <li>
-                <img src="./imagen/BicicletasVarias.jpg" alt="atardecer" srcset="atardecer en la ciudad">
-                <div class="texto">
-                    <h2>Imagen 4</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius impedit non delectus, veritatis illum aliquam. Accusamus atque aperiam nostrum maxime iste qui ut!
-                    </p>
-                </div>
-             </li>
-         </ul>
-     </div>
-</main>
-
-
- <!-- *****************Productos y sus caracteristicas *******************-->
- <section class="section-header">
-    <h2>Nuestros Productos</h2>
- </section>
-<section class="contenedor">
-
-            <div class="item-box">
-            
-                    <div class="img-box">
-                       <a href="producto1.html"> <img class="item-img" src="imagen/bici1.png" alt=""></a>
+    <!--******************** Slider**************************-->
+    <main>
+        <div class="slider-box">
+            <ul>
+                <li>
+                    <img src="./imagen/descargaCarusel1.jpg" alt="atardecer" srcset="atardecer en la ciudad" />
+                    <div class="texto">
+                        <h2>Imagen 1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+                            impedit non delectus, veritatis illum aliquam. Accusamus atque
+                            aperiam nostrum maxime iste qui ut!
+                        </p>
                     </div>
-                    
-                    <p id="descripcion">Bicicleta Fuji  Alu/carbon Celero </p>
-                    <span id="precio">$25.000</span>
-            </div>
-                    
-            
- 
-            <div class="item-box">
-                <div class="img-box">
-                    <img class="item-img" src="imagen/BiciN2.png" alt="">
-                </div>
-                    <p id="descripcion">Bicicleta Fuji  Alu/carbon Celero </p>
-                    <span id="precio">$205.000</span>
-            </div>
-
-            <div class="item-box">
-                <div class="img-box">
-                    <img class="item-img" src="imagen/BiciN3.png" alt="">
-                </div>
-                    <p id="descripcion">Bicicleta Fuji  Alu/carbon Celero </p>
-                    <span id="precio">$189.000</span>
-            </div>
-
-            <div class="item-box">
-                <div class="img-box">
-                    <img class="item-img" src="imagen/BiciN2.png" alt="">
-                </div>
-                    <p id="descripcion">Bicicleta Fuji  Alu/carbon Celero </p>
-                    <span id="precio">$250.000</span>
-            </div>
-</section>
-<br>        
-<section class="section-header">
-    <h2>Nuestros Servicios</h2>
- </section>
-<section class="contenedor">
-
-            <div class="item-box">
-            
-                    <div class="img-box">
-                        <img class="item-img" src="imagen/mantenimiento.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./imagen/descargaCarusel2.jpg" alt="atardecer" srcset="atardecer en la ciudad" />
+                    <div class="texto">
+                        <h2>Imagen 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+                            impedit non delectus, veritatis illum aliquam. Accusamus atque
+                            aperiam nostrum maxime iste qui ut!
+                        </p>
                     </div>
-                    <p id="descripcion" class="pespacio">Mantenimiento </p>
-                    <span id="precio">$5.000</span>
-                </div>
-                    
-                </div>
-            </div>
- 
-            <div class="item-box">
-                <div class="img-box">
-                    <img class="item-img" src="imagen/delivery.jpeg" alt="">
-                </div>
-                    <p id="descripcion" class="pespacio">Delivery</p>
-                    <span id="precio">$5.000</span>
-            </div>
-
-            <div class="item-box">
-                <div class="img-box">
-                    <img class="item-img" src="imagen/seguridad.png" alt="">
-                </div>
-                    <p id="descripcion" class="pespacio">Seguridad</p>
-                    <span id="precio">$5.000</span>
-            </div>
-
-            <div class="item-box">
-                <div class="img-box">
-                    <img class="item-img" src="imagen/salud.jpg" alt="">
-                </div>
-                    <p id="descripcion" class="pespacio">Salud</p>
-                    <span id="precio">$5.000</span>
-            </div>
-</section>
- <!-- imagenes con linck -->
-<section class="banner-links">
-    <a href="#" ><img src="imagen/Repuesto.jpg" class="img" width="250" height="190px"></a>
-    <a href="Form2.html" ><img src="imagen/accesorios.jpg" class="img" alt="" width="250" height="190px"></a>
-    <a href="form1.html" ><img src="imagen/Varios.jpg" class="img" alt="" width="250" height="190px"></a>
-    <a href="form3.html" ><img src="imagen/BicicletasVarias.jpg" class="img" alt=""width="250" height="190px" ></a>
-
-</section>
-
-
-    
-
- <!-- pie de pagina -->
-
-    <footer class="pie">
-
-        <div class="pie-sobre_Nosotros"> 
-            
-            <h3 class="TituloSobreNosotros">Sobre Nosotros</h3><br>
-            
-            <p>Tenemos todo para el armado de <br>
-            bicicletas adecuadas a cada persona <br>
-            según uso, presupuesto y gustos.<br>
-            Una bike para cada persona, armá la tuya <br>
-            como quieras! Bicicletas de <br>
-            competición, XC, 4X, DH, Urban. <br>
-            La mayor variedad en bikes, partes, <br>
-            repuestos y las mejores marcas</p>
-        </div>
-
-        <div class="pie-Ayuda">
-            <h3>Ayuda</h3> <br>
-
-            <a href="#"> ¿Como comprar?</a>
-            <br>
-            <a href="#"> Cambios & devoluciones</a>
-            <br>
-            <a href="#"> Botón de arrepentimiento</a>
-        </div>
-        
-        <div class="pie-Escribinos"> 
-            <h3>Escribinos</h3><br>
-            
-            <br>
-            <span><i class="fa-brands fa-whatsapp"></i> 23232323</span>
-            <br>
-            <span><a href="#"><i class="fa-regular fa-envelope"></i></a> Rodamundo@gmail.com </span>
-            <br>
-            <span><a href="#"><i class="fa-sharp fa-regular fa-location-dot"></i></a>calle siempre viva 123 , <br> san rafael gutierres , <br>argentina </span>
-            <br>
-        </div>
-
-
-        <div class="pie-Seguinos"> 
-            <h3>Seguinos</h3><br>
-            
-            <ul class="ul-redes">
-                <li class="li-redes"><a href="https://www.google.com/search?q=facebook&rlz=1C1ONGR_esAR1075AR1075&oq=facebook&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyFQgBEC4YQxiDARjHARixAxjRAxiKBTIGCAIQRRhAMgYIAxBFGDwyBggEEAUYQDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIyMTVqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8"><i class="fa-brands fa-facebook" style="color: #0d0d0d;"></i></a></li>
-                <li class="li-redes"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #0c0d0d;"></i></a></li>
+                </li>
+                <li>
+                    <img src="./imagen/imagesCarusel3.jpg" alt="atardecer" srcset="atardecer en la ciudad" />
+                    <div class="texto">
+                        <h2>Imagen 3</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+                            impedit non delectus, veritatis illum aliquam. Accusamus atque
+                            aperiam nostrum maxime iste qui ut!
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./imagen/BicicletasVarias.jpg" alt="atardecer" srcset="atardecer en la ciudad" />
+                    <div class="texto">
+                        <h2>Imagen 4</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+                            impedit non delectus, veritatis illum aliquam. Accusamus atque
+                            aperiam nostrum maxime iste qui ut!
+                        </p>
+                    </div>
+                </li>
             </ul>
-            <br>
+        </div>
+    </main>
+
+    <!-- *****************Productos y sus caracteristicas *******************-->
+    <section class="section-header">
+        <h2>Nuestros Productos</h2>
+     </section>
+     
+    <section class="contenedor">
+        <div class="item-box">
+            <div class="img-box">
+                <a href="producto.html">
+                    <img class="item-img" src="imagen/bici1.png" alt="producto" /></a>
+            </div>
+
+            <p id="descripcion">Bicicleta Fuji Alu/carbon Celero</p>
+            <span id="precio">$25.000</span>
         </div>
 
-       
-    </footer>
+        <div class="item-box">
+            <div class="img-box">
+                <img class="item-img" src="imagen/BiciN2.png" alt="" />
+            </div>
+            <p id="descripcion">Bicicleta Fuji Alu/carbon Celero</p>
+            <span id="precio">$205.000</span>
+        </div>
 
+        <div class="item-box">
+            <div class="img-box">
+                <img class="item-img" src="imagen/BiciN3.png" alt="" />
+            </div>
+            <p id="descripcion">Bicicleta Fuji Alu/carbon Celero</p>
+            <span id="precio">$189.000</span>
+        </div>
+
+        <div class="item-box">
+            <div class="img-box">
+                <img class="item-img" src="imagen/BiciN2.png" alt="" />
+            </div>
+            <p id="descripcion">Bicicleta Fuji Alu/carbon Celero</p>
+            <span id="precio">$250.000</span>
+        </div>
+    </section>
+
+    <section class="section-header">
+        <h2>Nuestros Servicios</h2>
+    </section>
+    <section class="contenedor">
+        <div class="item-box">
+            <div class="img-box">
+                <img class="item-img" src="imagen/mantenimiento.jpeg" alt="" />
+            </div>
+            <p id="descripcion" class="pespacio">Mantenimiento</p>
+            <span id="precio">$5.000</span>
+        </div>
+
+        <div class="item-box">
+            <div class="img-box">
+                <img class="item-img" src="imagen/delivery.jpeg" alt="" />
+            </div>
+            <p id="descripcion" class="pespacio">Delivery</p>
+            <span id="precio">$5.000</span>
+        </div>
+
+        <div class="item-box">
+            <div class="img-box">
+                <img class="item-img" src="imagen/seguridad.png" alt="" />
+            </div>
+            <p id="descripcion" class="pespacio">Seguridad</p>
+            <span id="precio">$5.000</span>
+        </div>
+
+        <div class="item-box">
+            <div class="img-box">
+                <img class="item-img" src="imagen/salud.jpg" alt="" />
+            </div>
+            <p id="descripcion" class="pespacio">Salud</p>
+            <span id="precio">$5.000</span>
+        </div>
+    </section>
+
+    <!-- imagenes con link -->
+    <section class="banner-links">
+        <a href="#"><img src="imagen/Repuesto.jpg" class="img" width="250" height="190px" /></a>
+        <a href="Form2.html"><img src="imagen/accesorios.jpg" class="img" alt="" width="250" height="190px" /></a>
+        <a href="form1.html"><img src="imagen/Varios.jpg" class="img" alt="" width="250" height="190px" /></a>
+        <a href="form3.html"><img src="imagen/BicicletasVarias.jpg" class="img" alt="" width="250" height="190px" /></a>
+    </section>
+
+    <!-- pie de pagina -->
+
+    <footer></footer>
+    <!-- <script src="java.js"></script> -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="componentes.js"></script>
 </body>
+
 </html>

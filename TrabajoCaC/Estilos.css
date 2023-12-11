@@ -9,20 +9,23 @@
 body{
     background-color: hsla(60, 4%, 91%, 0.959);
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 /**--------------------header----------------------**/
 
-#car-ico , #user-ico {
-    padding: 10px;
-    cursor: pointer;
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 130px;
 }
 
 .span-header {
     background-color: rgba(245, 77, 10, 0.877);
+    width: 100%;
+    height: 20px;
     text-align: center;
-   
 }
 @media screen and (max-width: 1200px) {
     .span-header{
@@ -31,14 +34,16 @@ font-size: 10px;
     
 }
 
-
 header {
     background-image: url(https://img.freepik.com/foto-gratis/fondo-textura-pintura-liquida-veteada-textura-abstracta-pintura-fluida-papel-tapiz-mezcla-colores-intensivos_1258-82939.jpg);
-    /**display: flex;
-    align-items: center;Baja la caja**/
-   width: 100%;
-   height: 150px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 @media screen and (max-width: 1200px) {
     .header{
 width: 50px;
@@ -47,29 +52,22 @@ height: 20px;
     
 }
 
-.pespacio {
-    margin-top: -100px;
-    background-color: aqua;
-}
-
 .CuentaDeUsuario {
-   display: flex; 
-   list-style:none;
-
-     
+    width: 25%;
+    height: 130px;
+    display: flex;
+    list-style:none;
+    align-items: self-end;
+    justify-content: space-evenly;
 }
 
 .CuentaDeUsuario a{
     text-decoration: none;
-    text-align:right;
+    text-align:center;
     color:black;
-    font-size: 16px;
-    padding: 10px 10px 10px 10px;
-    position:relative;
-    top: -106px;   /**Baja la caja**/
-    right: -900px; /**posiciona del lado redercho la caja**/
-    
-    
+    font-size: 17px;
+    padding: 1px;
+    position: relative;
 }
 @media screen and (max-width: 1200px) {
     .CuentaDeUsuario a{
@@ -79,77 +77,71 @@ height: 20px;
     font-size: 10px;
     padding: 10px 10px 10px 10px;
     position:relative;
-    top: -55px;   /**Baja la caja**/
-    right: -550px; /**posiciona del lado redercho la caja**/
 
     }
     
 }
 /**-------------------Buscador---------------**/
 
+.header-busqueda {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.buscador {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .CuadroBuscador{
     width :450px;
     height: 40px;
-    position: absolute;
-    top: 40px;
-    left: 320px;
-
+    margin: 20px;
 }
 @media screen and (max-width: 1200px) {
     .CuadroBuscador{
-    width: 280px;
+    width: 200px;
     height: 20px;
-    position: relative;
-    top: -100px;
-    left: 140px;
     }
     
 }
 .BotonBuscador{
     width :150px;
     height: 40px;
-    position: relative;
-    left: 800px;
-    top: -242px;
 }
 @media screen and (max-width: 1200px) {
     .BotonBuscador{
         width: 100px;
         height: 20px;
-        position: relative;
-        left: 150px;
-        top: -100px;
         }
 }
 
 /**-------------------Menu desplegable---------------**/
 
-Nav {
-    width: 100px;
-    height: -100px;
+.nav {
+    width: 60%;
     position: relative;
-    left: 210px;/**izquierda a derecha**/
-    top: -125px; /**arriba y abajo**/ 
-    
-       
+    z-index: 2;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: self-end;
     }
     
 
-#Nav ul li .items .itemMenu {
+.itemMenu {
     padding: 5px;
-    display: inline-block;
-    position: relative;
-        top: 10px;
-        left: 2%;
-
 }
 
 #Nav ul {
     display: flex;  
     position: relative;
-        left: 75%;
-        bottom: 10px;
-        font-size: 20px;
+    font-size: 20px;
      
 }
 
@@ -158,8 +150,6 @@ Nav {
         width: 10px;
         height: 20px;
         position: relative;
-        left: -80px;
-        bottom: -90px;
         font-size: 15px;
         }
 }
@@ -167,70 +157,86 @@ Nav {
 #Nav ul li {
     list-style: none;
     position: relative;
-        left: 25%;
-        top: 60%;
 }
+
 
 
 #Nav ul li a {
     text-decoration: none;
     color:black;
     padding:10px;
-    
+    display: block;
  }
 
 #Nav ul li a:hover {
     background-color: #dd8f467a;
 }
+
 #Nav li ul {
     display:none;
-    width: 200px;
-    height: 200px;
     position:absolute;
-    bottom: -200px;
-    left: -10px;
     background-color: #e9b880;
 }
+
 #Nav li:hover > ul {
-    
     display:block;
-
     text-align: justify;
-    
 }
+
 .logo{
-    width: 200px;
-    mix-blend-mode: multiply; /**Elimina el fondo de las imgen**/
-   position: relative;
-   bottom: 30px;
+    width: 15%;
+    margin-top: -35px;
+    mix-blend-mode: multiply; /*Elimina el fondo de las imagen*/
 
 }
+.logo img {
+    width: 200px;
+    height: 200px;  
+}
+
 @media screen and (max-width: 1200px) {
-    .logo{
-        padding: 0%;
-        margin: 0%;
-        width: 100px;
-        position: relative;
-        bottom: -10px;
+
+    .logo {
+        display: flex;
+        
+    }
+
+    .logo img{
+    margin-top: -15px;
+    width: 150px;
+    height: 150px; 
+        
     }
     
 }
 
+#car-ico , #user-ico {
+    padding: 10px;
+    cursor: pointer;
+}
 
+@media screen and (max-width: 1200px) {
+    .search-user-car{
+    width: 280px;
+    height: 20px;
+    position: relative;
+    }
+    
+}
 /*.........................Imagenes carrousel -main .............. */
-
 
 .slider-box {
     width: 100%;
-    height: 10%;
-    margin: 30px auto 0;
+    height: 800px;
+    margin: 50px auto;
     overflow: hidden;
+    z-index: 1;
 }
 .slider-box ul {
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 20s infinite ease-in-out;
 }
 .slider-box li {
     width: 100%;
@@ -266,12 +272,11 @@ Nav {
     75%  {margin-left: -300%;}
     100%  {margin-left: -300%;}
 }
-@media (max-width:991px) {
-    body {
-        padding: 30px;
-    }
+@media (max-width:1200px) {
+    
     .slider-box {
         width: 100%;
+        height: auto;
     }
 
     .texto {
@@ -307,9 +312,8 @@ Nav {
 .pie{
     background-color: rgb(233, 147, 36);
     padding: 8px 8px ;
-    margin: 8px 8px ;
     width: 100%;
-    height: 100%;
+    height: 220px;
     display: flex;
     justify-content: space-around;
     text-align: left;
@@ -320,8 +324,7 @@ Nav {
         margin: 0%;
         width: 100%;
         position: relative;
-        bottom: -10px;
-        background-color: #923b3b;
+        /* background-color: #923b3b; */
     }
     
 }
@@ -329,9 +332,9 @@ Nav {
     padding: 10px 10px ;
     margin: 10px 10px ;
     background-color: rgb(226, 148, 70);
-    align-items: last baseline;
+    /* align-items: last baseline; */
     width: 50%;
-    height: 257px;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -358,17 +361,18 @@ Nav {
     padding: 10px ;
     margin: 10px  ;
     background-color: rgb(226, 148, 70);
-    align-items: last baseline;
+
     width: 40%;
-    height: 257px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    text-align: right;;
+    text-align: left;
 }
 .pie-Ayuda a{
+    margin-top: 10px;
+    padding: 2px;
     text-decoration: none;
     color: black;
-    padding: 1px;
 }
 @media screen and (max-width: 600px) {
     .pie-Ayuda{
@@ -391,12 +395,17 @@ Nav {
     padding: 10px 10px ;
     margin: 10px 10px ;
     background-color: rgb(226, 148, 70);
-    align-items: last baseline;
     width: 50%;
-    height: 257px;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
+
+.pie-Escribinos span {
+    padding: 2px;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 600px) {
     .pie-Escribinos{
         padding: 0%;
@@ -420,7 +429,7 @@ Nav {
     background-color: rgb(226, 148, 70);
     align-items: last baseline;
     width: 50%;
-    height: 257px;
+    height: auto;
     display:inline-block;
     flex-direction: column;
 
@@ -439,7 +448,7 @@ Nav {
 
 .section-header {
    
-    margin: auto;
+    margin: 20px auto 0px auto;
     height: max-content;
     width: max-content;
     
@@ -452,7 +461,7 @@ Nav {
     padding: 10px 100px 10px ;
 }
 .contenedor{
-   margin: auto;
+   margin: 20px auto;
    display: flex;
    flex-wrap: wrap;
    max-width: 1000px;
@@ -489,11 +498,11 @@ padding: 5px 5px 5px 5px;
 margin: 10px 10px 10px 10px;
 text-align: center;
 cursor: pointer; /**Borde circular**/
-transition: .3s; /**tiempo de transicion**/
+transition: .3s; /**tiempo de transicion**/ 
 }
 
 .contenedor .item-box:hover{
-    background-color: rgb(49, 43, 30);
+    background-color: rgba(49, 43, 30, 0.358);
 }
 
 /**-------------------imagenes con licks---------------**/
@@ -514,13 +523,12 @@ transition: .3s; /**tiempo de transicion**/
     height: 450px;
     margin-bottom: 20px;
     position: relative;
-    bottom: -15px;
     
 
 }
 .DetalleDelProductoF1 .img1{
-    width :450px;
-    height: 450px;
+    width :100%;
+    height: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 5px rgb(85, 83, 83);
 }
@@ -543,29 +551,33 @@ transition: .3s; /**tiempo de transicion**/
     box-shadow: 0px 5px 5px rgba(53, 51, 50, 0.877);
 }
 
-.descripcion_Productos{
-    width :500px;
-    height: 540px;
+.descripcion_Productos, .contenedor-formulario{
     position: relative;
-    bottom: 548px;
-    left: 500px;
     background-color: rgba(252, 251, 248, 0.911); 
-    padding: 5px 5px 5px 5px;
-    margin: 10px 10px 10px 10px;
+    padding: 20px;
     box-shadow: 0px 5px 5px rgba(53, 51, 50, 0.356);
 
 }
+
+.descripcion_Productos ul {
+    margin: 15px;
+}
+
+.descripcion_Productos ul li {
+    padding: 10px;
+}
+
 .parafo{
     font-size: 20px;
     font-family: Helvetica;
-
+    padding: 10px;
 }
 
 .H1F1{
     font-family: Helvetica;
     color: rgb(241, 144, 17);
     font-size: 50px;
-
+    padding: 10px;
 }
 .InpBotom{
     width :220px;
@@ -577,8 +589,6 @@ transition: .3s; /**tiempo de transicion**/
     text-align: center;
     background-color: rgb(241, 144, 17);
     position: relative;
-    bottom: -28px;
-    left: 130px;
 }
 .InpBotom:hover{
     color: rgb(247, 240, 232);
@@ -589,55 +599,9 @@ transition: .3s; /**tiempo de transicion**/
     width :450px;
     height: 40px;
     position: absolute;
-    top: 40px;
-    left: 320px;
 }
 
-@media screen and (max-width: 1200px) {
-    .search-user-car{
-    width: 280px;
-    height: 20px;
-    position: relative;
-    top: -100px;
-    left: 140px;
-    }
-    
-}
-.BtBuscador{
-    width :150px;
-    height: 40px;
-    position: relative;
-    left: 800px;
-    top: -204px;
-}
-@media screen and (max-width: 1200px) {
-    .BtBuscador{
-        width: 100px;
-        height: 20px;
-        position: relative;
-        left: 150px;
-        top: -100px;
-        }
-}
-.CdBuscador{
-    
-    width :450px;
-    height: 40px;
-    position: absolute;
-    top: 40px;
-    left: 320px;
 
-}
-@media screen and (max-width: 1200px) {
-    .CdBuscador{
-    width: 280px;
-    height: 20px;
-    position: relative;
-    top: -100px;
-    left: 140px;
-    }
-    
-}
 /**------------------------FormNosotros---------------------**/
 .PNosotros{
     width: 100%;
@@ -657,4 +621,69 @@ transition: .3s; /**tiempo de transicion**/
     margin: 0px 30px;
     padding: 0;
 
+}
+
+/* form comprar producto */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%; /* Ajusta según tus necesidades */
+}
+
+.producto-imagenes {
+    width: 30%;
+    margin-left : 10px;
+}
+
+.main-producto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.DetalleDelProductoF1 {
+    width: auto;
+    text-align: center;
+}
+
+.ContenedorDeImg {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    justify-content: center;
+    height: 100px;
+}
+
+.ContenedorDeImg img {
+    max-width: 100px; /* Ajusta según tus necesidades */
+    cursor: pointer;
+}
+
+.descripcion_Productos {
+    width: 35%; /* Ajusta según tus necesidades */
+}
+
+.contenedor-formulario {
+    width: 30%;
+    margin-right: 10px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario label {
+    margin: 10px 0px;
+}
+
+.button-form {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
 }
